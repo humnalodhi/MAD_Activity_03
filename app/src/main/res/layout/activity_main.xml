@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="250dp"
+                android:src="@drawable/mountain"
+                android:id="@+id/image"
+                android:padding="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/btn1"
+                    android:backgroundTint="#FF003B"
+                    android:text="@string/button_1"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/btn2"
+                    android:backgroundTint="#FF6600"
+                    android:text="@string/button_2"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/text_view"
+            android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:id="@+id/edit_text1"
+                android:textColor="@color/black"
+                android:text="@string/title"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:id="@+id/edit_text2"
+                android:textColor="@color/black"
+                android:text="@string/description"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/submit_btn"
+            android:backgroundTint="#0088FF"
+            android:layout_margin= "15dp"
+            android:text="@string/submit"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
